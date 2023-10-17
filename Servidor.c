@@ -182,7 +182,7 @@ void Login(char nombre[25], char contrasena[25], char respuesta[512])
 }
 
 
-void Registrar(char nombre[25], char contrasena[25],char id[25], char respuesta[512])
+void Registrar(char nombre[25], char contrasena[25], char respuesta[512])
 {
 	char consulta[500];
 	int numJ;
@@ -202,7 +202,7 @@ void Registrar(char nombre[25], char contrasena[25],char id[25], char respuesta[
 		exit(1);
 	}
 	
-	sprintf(consulta, "INSERT INTO JUGADOR VALUES ('%s', '%s','%s', 0, 0, 0, 0)", nombre, id, contrasena);
+	sprintf(consulta, "INSERT INTO JUGADOR VALUES ('%s', '%s', 0, 0, 0, 0)", nombre, contrasena);
 	err = mysql_query(conn, consulta);
 	if (err != 0)
 	{
@@ -218,9 +218,9 @@ void Registrar(char nombre[25], char contrasena[25],char id[25], char respuesta[
 	mysql_close(conn);
 }
 
-void DameTiempoJugador (int id)
+void DameTiempoJugador(char nombre[20], char respuesta[512])
 {
-	
+	char tiempo[20];
 	char consulta [100];
 	
 	//Creamos una conexion al servidor MYSQL 
@@ -231,7 +231,7 @@ void DameTiempoJugador (int id)
 		exit (1);
 	}
 	//inicializar la conexin
-	conn = mysql_real_connect (conn, "localhost","root", "mysql", "Carrerin Carreron",0, NULL, 0);
+	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
 	if (conn==NULL) {
 		printf ("Error al inicializar la conexion: %u %s\n", 
 				mysql_errno(conn), mysql_error(conn));
@@ -239,8 +239,8 @@ void DameTiempoJugador (int id)
 	}
 	
 	//consulta SQL
-	strcpy (consulta, "SELECT TIEMPOTOTALJUGADO FROM JUGADOR WHERE JUGADOR.ID = '");
-	strcat (consulta, id);
+	strcpy (consulta, "SELECT TIEMPOTOTALJUGADO FROM JUGADOR WHERE JUGADOR.NOMBRE = '");
+	strcat (consulta, nombre);
 	strcat (consulta, "'");
 	
 	//Para comprobar errores en la consulta
@@ -255,136 +255,116 @@ void DameTiempoJugador (int id)
 	row = mysql_fetch_row (resultado);
 	
 	//Recogemos el resultado
-	char tiempototal [20];
-	if(row==NULL)
+	if(row == NULL || row[0] == NULL){
 		printf ("No se han obtenido datos\n");
+		sprintf(respuesta, "2-Error");
+	}
 	else	
 	{
-		strcpy(tiempototal, row[0]);
-		while ((row = mysql_fetch_row(resultado)) != NULL){
-			strcat(tiempototal, "-");
-			strcat(tiempototal, row[0]);
-		}
-		printf("Tiempo total: %s\n", tiempototal);
-		
-		
-		mysql_close (conn);
+		strcpy(tiempo, row[0]);
+		sprintf(respuesta, "2-SI-%s", tiempo);
 	}
+	mysql_close (conn);
 }
 	//Circuito favorito de un jugador por su nombre
-void DameCircuitoFav(char NOMBRE[50])
+void DameCircuitoFav(char nombre[50], char respuesta[512])
 	{
-		MYSQL *conn;
-		int err;
-		// Estructura especial para almacenar resultados de consultas 
-		MYSQL_RES *resultado;
-		MYSQL_ROW row;
-		
-		char consulta [100];
-		
-		//Creamos una conexion al servidor MYSQL 
-		conn = mysql_init(NULL);
-		if (conn==NULL) {
-			printf ("Error al crear la conexion: %u %s\n", 
-					mysql_errno(conn), mysql_error(conn));
-			exit (1);
-		}
-		//inicializar la conexion
-		conn = mysql_real_connect (conn, "localhost","root", "mysql", "Carrerin Carreron",0, NULL, 0);
-		if (conn==NULL) {
-			printf ("Error al inicializar la conexion: %u %s\n", 
-					mysql_errno(conn), mysql_error(conn));
-			exit (1);
-		}
-		
-		//consulta SQL
-		strcpy (consulta, "SELECT CIRCUITOFAV FROM JUGADOR WHERE JUGADOR.NOMBRE = '");
-		strcat (consulta, NOMBRE);
-		strcat (consulta, "'");
-		
-		//Para comprobar errores en la consulta
-		err=mysql_query(conn, consulta);
-		if(err!=0){
-			printf("Error al consultar los datos de la base %u%s\n", mysql_errno(conn),mysql_error(conn));
-			exit(1);
-		}
-		
-		resultado=mysql_store_result(conn);
-		row =mysql_fetch_row(resultado);
-		
-		char circuitofav [20];
-		if(row==NULL){
-			printf ("No se han obtenido datos\n");
-		}
-		else
-		{
-			strcpy(circuitofav, row[0]);
-			while ((row = mysql_fetch_row(resultado)) != NULL){
-				strcat(circuitofav, "-");
-				strcat(circuitofav, row[0]);
-			}
-			printf("Su circuito favorito es: %s\n", circuitofav);
-			
-			mysql_close (conn);
-		}
+	char circuito[20];
+	char consulta [100];
+	
+	//Creamos una conexion al servidor MYSQL 
+	conn = mysql_init(NULL);
+	if (conn==NULL) {
+		printf ("Error al crear la conexion: %u %s\n", 
+				mysql_errno(conn), mysql_error(conn));
+		exit (1);
+	}
+	//inicializar la conexin
+	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
+	if (conn==NULL) {
+		printf ("Error al inicializar la conexion: %u %s\n", 
+				mysql_errno(conn), mysql_error(conn));
+		exit (1);
+	}
+	
+	//consulta SQL
+	strcpy (consulta, "SELECT CIRCUITOFAV FROM JUGADOR WHERE JUGADOR.NOMBRE = '");
+	strcat (consulta, nombre);
+	strcat (consulta, "'");
+	
+	//Para comprobar errores en la consulta
+	err=mysql_query (conn, consulta);
+	if (err!=0) {
+		printf ("Error al consultar datos de la base %u %s\n", mysql_errno(conn), mysql_error(conn));
+		exit (1);
+	}
+	
+	//recogemos el resultado de la consulta
+	resultado = mysql_store_result (conn);
+	row = mysql_fetch_row (resultado);
+	
+	//Recogemos el resultado
+	if(row == NULL || row[0] == NULL){
+		printf ("No se han obtenido datos\n");
+		sprintf(respuesta, "3-Error");
+	}
+	else	
+	{
+		strcpy(circuito, row[0]);
+		sprintf(respuesta, "3-SI-%s", circuito);
+	}
+	mysql_close (conn);
 	}
 //Dame la distancia de un circuito
-void DameDistancia(char circuito[20])
-		{
-			MYSQL *conn;
-			int err;
-			// Estructura especial para almacenar resultados de consultas 
-			MYSQL_RES *resultado;
-			MYSQL_ROW row;
-			
-			char consulta [100];
-			
-			//Creamos una conexion al servidor MYSQL 
-			conn = mysql_init(NULL);
-			if (conn==NULL) {
-				printf ("Error al crear la conexion: %u %s\n", 
-						mysql_errno(conn), mysql_error(conn));
-				exit (1);
-			}
-			//inicializar la conexion
-			conn = mysql_real_connect (conn, "localhost","root", "mysql", "Carrerin Carreron",0, NULL, 0);
-			if (conn==NULL) {
-				printf ("Error al inicializar la conexion: %u %s\n", 
-						mysql_errno(conn), mysql_error(conn));
-				exit (1);
-			}
-			
-			//consulta SQL
-			strcpy (consulta, "SELECT DISTANCIA FROM CARRERIN WHERE CARRERIN.CIRCUITO = '");
-			strcat (consulta, circuito);
-			strcat (consulta, "'");
-			
-			//Para comprobar errores en la consulta
-			err=mysql_query(conn, consulta);
-			if(err!=0){
-				printf("Error al consultar los datos de la base %u%s\n", mysql_errno(conn),mysql_error(conn));
-				exit(1);
-			}
-			resultado=mysql_store_result(conn);
-			
-			row =mysql_fetch_row(resultado);
-			int distancia;
-			if(row==NULL)
-				printf ("No se han obtenido datos\n");
-			else {
-				distancia = row[0];
-				while(row!=NULL){
-					printf("La distancia del circuito son: %s metros\n", distancia);
-				}
-				
-				
-				mysql_close (conn);
-			}
-		}
+void DameDistancia(char circuito[20], char respuesta[512])
+	{
+	char duracion[20];
+	char consulta [100];
+	
+	//Creamos una conexion al servidor MYSQL 
+	conn = mysql_init(NULL);
+	if (conn==NULL) {
+		printf ("Error al crear la conexion: %u %s\n", 
+				mysql_errno(conn), mysql_error(conn));
+		exit (1);
+	}
+	//inicializar la conexin
+	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
+	if (conn==NULL) {
+		printf ("Error al inicializar la conexion: %u %s\n", 
+				mysql_errno(conn), mysql_error(conn));
+		exit (1);
+	}
+	
+	//consulta SQL
+	strcpy (consulta, "SELECT DURACION FROM CARRERIN WHERE CARRERIN.CIRCUITO = '");
+	strcat (consulta, circuito);
+	strcat (consulta, "'");
+	
+	//Para comprobar errores en la consulta
+	err=mysql_query (conn, consulta);
+	if (err!=0) {
+		printf ("Error al consultar datos de la base %u %s\n", mysql_errno(conn), mysql_error(conn));
+		exit (1);
+	}
+	
+	//recogemos el resultado de la consulta
+	resultado = mysql_store_result (conn);
+	row = mysql_fetch_row (resultado);
+	
+	//Recogemos el resultado
+	if(row == NULL || row[0] == NULL){
+		printf ("No se han obtenido datos\n");
+		sprintf(respuesta, "4-Error");
+	}
+	else	
+	{
+		strcpy(duracion, row[0]);
+		sprintf(respuesta, "4-SI-%s", duracion);
+	}
+	mysql_close (conn);
+}
 		
-		
-
-
 void* atenderCliente(void* socket)
 {
 	int ret;
@@ -419,11 +399,13 @@ void* atenderCliente(void* socket)
 		char* p = strtok(peticion, "-");
 		codigo = atoi(p);
 		
+			if ((codigo != 2) && (codigo != 3)&&(codigo!=4)) {
 			p = strtok(NULL, "-");
-			
+			if (p != NULL) {
 				strcpy(NOMBRE, p);
 				printf("Codigo: %d, Nombre: %s\n", codigo, NOMBRE);
-			
+			}
+			}	
 			if (codigo == 0) //LOGIN
 			{
 				p = strtok(NULL, "-");
@@ -445,10 +427,8 @@ void* atenderCliente(void* socket)
 				p = strtok(NULL, "-");
 				if (p != NULL) {
 					strcpy(contrasena, p);
-					p = strtok(NULL, "-");
-					strcpy(id, p);
-					printf("Codigo: %d, Nombre: %s, Contrasena: %s y ID: %s\n", codigo, NOMBRE, contrasena, id);
-					Registrar(NOMBRE, contrasena, id, contestacion);
+					printf("Codigo: %d, Nombre: %s y Contrasena: %s\n", codigo, NOMBRE, contrasena);
+					Registrar(NOMBRE, contrasena, contestacion);
 					if (strcmp(contestacion, "Error") != 0) {
 						r = Conectar(&lista, NOMBRE, socket);
 						DameConectados(&lista, conectados);
@@ -458,27 +438,39 @@ void* atenderCliente(void* socket)
 					}
 				}
 			}
-			/*else if(codigo == 2)
+			else if(codigo == 2)
 			{
-				printf ("Codigo: %d, Id: %s\n", codigo, id);
-				sprintf(respuesta,"%d",DameTiempoJugador(id));
-				write (sock_conn, respuesta, strlen(respuesta));
+				p = strtok(NULL, "-");
+				if (p != NULL) {
+					strcpy(consultas, p);
+					printf("Codigo: %d, Nombre: %s\n", codigo, consultas);
+					DameTiempoJugador(consultas, contestacion);
+					sprintf(respuesta, "%s", contestacion);
+					write(sock_conn, respuesta, strlen(respuesta));
+				}
 			}
 			else if(codigo == 3)
 			{
-				printf ("Codigo: %d, Nombre: %s\n", codigo, NOMBRE);
-				sprintf (respuesta,"%d",DameCircuitoFav(NOMBRE));
-				write (sock_conn, respuesta, strlen(respuesta));
+				p = strtok(NULL, "-");
+				if (p != NULL) {
+					strcpy(consultas, p);
+					printf("Codigo: %d, Nombre: %s\n", codigo, consultas);
+					DameCircuitoFav(consultas, contestacion);
+					sprintf(respuesta, "%s", contestacion);
+					write(sock_conn, respuesta, strlen(respuesta));
+				}
 			}
 			else if(codigo == 4)
 			{
-				printf ("Codigo: %d, Circuito: %s\n", codigo, circuito);
-				sprintf (respuesta,"%d",DameDistancia(circuito));
-				write (sock_conn, respuesta, strlen(respuesta));
+				p = strtok(NULL, "-");
+				if (p != NULL) {
+					strcpy(consultas, p);
+					printf("Codigo: %d, Nombre: %s\n", codigo, consultas);
+					DameDistancia(consultas, contestacion);
+					sprintf(respuesta, "%s", contestacion);
+					write(sock_conn, respuesta, strlen(respuesta));
+				}
 			}
-			printf ("Respuesta: %s\n", respuesta);
-			//lo enviamos
-			*/
 		}
 		close(sock_conn); 
 	}
@@ -493,7 +485,7 @@ int main(int argc, char* argv[])
 	pthread_t thread;
 	lista.num = 0;
 	int conexion = 0;
-	int puerto = 5080;
+	int puerto = 5020;
 	int i = 0;
 	
 	//abrimos el socket
