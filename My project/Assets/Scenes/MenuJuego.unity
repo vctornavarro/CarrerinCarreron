@@ -623,9 +623,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text1: {fileID: 0}
+  text2: {fileID: 0}
+  text3: {fileID: 0}
   NameInput: {fileID: 0}
   PasswordInput: {fileID: 0}
   ConfirmPasswordInput: {fileID: 0}
+  NombreJugadorInputField: {fileID: 0}
+  NombreCircuitoInputField: {fileID: 0}
+  notificacion: {fileID: 0}
+  NJInputField: {fileID: 0}
 --- !u!1 &1351736011
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +779,7 @@ GameObject:
   - component: {fileID: 1904366706}
   - component: {fileID: 1904366705}
   m_Layer: 5
-  m_Name: Volver
+  m_Name: "Cerrar Sesi\xF3n"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

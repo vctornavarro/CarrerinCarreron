@@ -12,6 +12,7 @@ public class CCliente : MonoBehaviour
     public TextMeshProUGUI text1;
     public TextMeshProUGUI text2;
     public TextMeshProUGUI text3;
+    public TextMeshProUGUI text4;
 
     //variables para registrarse/loguearse
     public TMP_InputField NameInput;
@@ -152,6 +153,22 @@ public class CCliente : MonoBehaviour
                         Debug.Log("No se encuentran datos que coincidan");
                     }
                     break;
+                case 5:
+                    List<string> jugadoresConectados = new List<string>();
+                    for (int i = 2; i < trozos.Length; i++)
+                    {
+                        jugadoresConectados.Add(trozos[i]);
+                    }
+                    string STRjugadoresConectados = "";
+
+                    foreach (string jugador in jugadoresConectados)
+                    {
+                        STRjugadoresConectados += jugador + ", ";
+                    }
+                    text4 = GameObject.Find("Text Conectados").GetComponent<TextMeshProUGUI>();
+                    text4.text = "";
+                    text4.text = "Jugadores conectados: " + STRjugadoresConectados;
+                    break;
             }
         }
     }
@@ -225,6 +242,12 @@ public class CCliente : MonoBehaviour
         conexionServidor.EnviarMensajeServidor(query3);
         Debug.Log("Enviado");
     }
+    public void DameConectados()
+    {
+        string conectados = "5";
+        conexionServidor.EnviarMensajeServidor(conectados);
+        Debug.Log("Enviado");
+    }
 
     public void Cerrar() //cerrar el juego desde el menú
     {
@@ -232,3 +255,4 @@ public class CCliente : MonoBehaviour
         Application.Quit();
     }
 }
+

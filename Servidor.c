@@ -9,6 +9,9 @@
 #include <mysql.h>
 #include <arpa/inet.h>
 
+//Estructura necessaria para login excluyente
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+#define MAX_CLIENTS 4
 MYSQL* conn;
 MYSQL_RES* resultado;
 MYSQL_ROW row;
@@ -413,12 +416,14 @@ void* atenderCliente(void* socket)
 					strcpy(contrasena, p);
 					printf("Codigo: %d, Nombre: %s y Contrasena: %s\n", codigo, NOMBRE, contrasena);
 					Login(NOMBRE, contrasena, contestacion);
+					pthread_mutex_lock(&mutex);
 					if (strcmp(contestacion, "Error") != 0) {
 						r = Conectar(&lista, NOMBRE, socket);
 						DameConectados(&lista, conectados);
 						sprintf(respuesta, "%s", contestacion);
 						write(sock_conn, respuesta, strlen(respuesta));
 					}
+					pthread_mutex_unlock(&mutex);
 				}
 			}
 			else if (codigo == 1) //REGISTRAR
@@ -429,13 +434,14 @@ void* atenderCliente(void* socket)
 					strcpy(contrasena, p);
 					printf("Codigo: %d, Nombre: %s y Contrasena: %s\n", codigo, NOMBRE, contrasena);
 					Registrar(NOMBRE, contrasena, contestacion);
+					pthread_mutex_lock(&mutex);
 					if (strcmp(contestacion, "Error") != 0) {
 						r = Conectar(&lista, NOMBRE, socket);
 						DameConectados(&lista, conectados);
 						sprintf(respuesta, "%s", contestacion);
 						write(sock_conn, respuesta, strlen(respuesta));
-						
 					}
+					pthread_mutex_unlock(&mutex);
 				}
 			}
 			else if(codigo == 2)
@@ -471,6 +477,15 @@ void* atenderCliente(void* socket)
 					write(sock_conn, respuesta, strlen(respuesta));
 				}
 			}
+			else if(codigo == 5)
+			{
+				printf("Codigo: %d\n", codigo);
+				pthread_mutex_lock(&mutex);
+				DameConectados(&lista, contestacion);
+				sprintf(respuesta, "%s", contestacion);
+				write(sock_conn, respuesta, strlen(respuesta));
+				pthread_mutex_unlock(&mutex);
+			}
 		}
 		close(sock_conn); 
 	}
@@ -485,7 +500,7 @@ int main(int argc, char* argv[])
 	pthread_t thread;
 	lista.num = 0;
 	int conexion = 0;
-	int puerto = 5020;
+	int puerto = 5030;
 	int i = 0;
 	
 	//abrimos el socket
