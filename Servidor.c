@@ -489,8 +489,8 @@ void* atenderCliente(void* socket)
 			else if (codigo == 6) //DESCONECTAR/LOGOUT
 			{
 				pthread_mutex_lock(&mutex);
-				printf("Desconectando a %s\n", nombre);
-				r = Desconectar(&lista, nombre);
+				printf("Desconectando a %s\n", NOMBRE);
+				r = Desconectar(&lista, NOMBRE);
 				printf("Codigo de desconexion: %d\n", r);
 				if (r == 0)
 				{
