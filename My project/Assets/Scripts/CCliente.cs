@@ -26,6 +26,8 @@ public class CCliente : MonoBehaviour
     public TMP_InputField NJInputField;
 
     private ConexionServidor conexionServidor;
+    private string usuario;
+    private string contrasena;
 
     private void Awake()
     {
@@ -44,14 +46,14 @@ public class CCliente : MonoBehaviour
             int connectionResult = conexionServidor.ConnectToServer();
             if (connectionResult == 0)
             {
-                // La conexión se realizó correctamente
+                // La conexion se realizo correctamente
                 Debug.Log("Connected to server");
             }
             else
             {
                 // Error al conectar con el servidor
                 Debug.Log("Failed to connect to server");
-                return;// Sale del método Start si la conexión falla
+                return;// Sale del metodo Start si la conexion falla
             }
         }
         //continua con el resto del codigo
@@ -169,11 +171,21 @@ public class CCliente : MonoBehaviour
                     text4.text = "";
                     text4.text = "Jugadores conectados: " + STRjugadoresConectados;
                     break;
+                case 6: //desconectar
+                    if (mensaje == "Desconectando")
+                    {
+                        conexionServidor.SetLoggedIn(true);
+                        Debug.Log("Cerrando sesiÃ³n");
+                        SceneManager.LoadScene("MenuPrincipal");
+                    }
+                    else if (mensaje == "Error al desconectar")
+                        notificacion.text = "Error al desconectar";
+                    break;
             }
         }
     }
 
-    public void IniciarSesion() //procedimiento para iniciar sesión
+    public void IniciarSesion() //procedimiento para iniciar sesion
     {
         string Name = NameInput.text;
         string Password = PasswordInput.text;
@@ -183,6 +195,8 @@ public class CCliente : MonoBehaviour
             string mensajeIniciarSesion = "0-" + Name + "-" + Password;
             conexionServidor.EnviarMensajeServidor(mensajeIniciarSesion);
             Debug.Log("Enviado");
+            usuario = NameInput.text;
+            contrasena = PasswordInput.text;
         }
         else
         {
@@ -204,11 +218,14 @@ public class CCliente : MonoBehaviour
                 string registrar = "1-" + Name + "-" + Password;
                 conexionServidor.EnviarMensajeServidor(registrar);
                 Debug.Log("Enviado");
+                usuario = NameInput.text;
+                contrasena = PasswordInput.text;
             }
             else if (PasswordInput.text != ConfirmPasswordInput.text)
             {
-                text1.text = "Las contraseñas no coinciden";
-                Debug.Log("Las contraseñas no coinciden");
+                text1.text = "Las contraseÃ±as no coinciden";
+                Debug.Log("Las contraseÃ±as no coinciden");
+                
             }
         }
         else
@@ -248,8 +265,14 @@ public class CCliente : MonoBehaviour
         conexionServidor.EnviarMensajeServidor(conectados);
         Debug.Log("Enviado");
     }
+     public void Desconectar() //desconectar/log out
+    {
+        string mensaje = "6-" + usuario + "-" + contrasena;
+        conexionServidor.EnviarMensajeServidor(mensaje);
+        Debug.Log("Enviado");
+    }
 
-    public void Cerrar() //cerrar el juego desde el menú
+    public void Cerrar() //cerrar el juego desde el menu
     {
         conexionServidor.Desconectarse();
         Application.Quit();

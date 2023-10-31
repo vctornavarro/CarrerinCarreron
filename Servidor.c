@@ -486,6 +486,25 @@ void* atenderCliente(void* socket)
 				write(sock_conn, respuesta, strlen(respuesta));
 				pthread_mutex_unlock(&mutex);
 			}
+			else if (codigo == 6) //DESCONECTAR/LOGOUT
+			{
+				pthread_mutex_lock(&mutex);
+				printf("Desconectando a %s\n", nombre);
+				r = Desconectar(&lista, nombre);
+				printf("Codigo de desconexion: %d\n", r);
+				if (r == 0)
+				{
+					DameConectados(&lista, conectados);
+					sprintf(respuesta, "6-Desconectando");
+					write(sock_conn, respuesta, strlen(respuesta));
+				}
+				else if (r == -1)
+				{
+					sprintf(respuesta, "6-Error al desconectar");
+					write(sock_conn, respuesta, strlen(respuesta));
+				}
+				pthread_mutex_unlock(&mutex);
+			}
 		}
 		close(sock_conn); 
 	}
