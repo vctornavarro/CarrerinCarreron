@@ -15,7 +15,7 @@ C:/SOGH/CarrerinCarreron/My project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51092
+51829
 Successfully changed project path to: C:/SOGH/CarrerinCarreron/My project
 C:/SOGH/CarrerinCarreron/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,65 +49,65 @@ C:/SOGH/CarrerinCarreron/My project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11812] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4202104771 [EditorId] 4202104771 [Version] 1048832 [Id] WindowsEditor(7,Victor) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11784] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4027500642 [EditorId] 4027500642 [Version] 1048832 [Id] WindowsEditor(7,Victor) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11812] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4202104771 [EditorId] 4202104771 [Version] 1048832 [Id] WindowsEditor(7,Victor) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11784] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 4027500642 [EditorId] 4027500642 [Version] 1048832 [Id] WindowsEditor(7,Victor) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 66.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 37.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.12f1 (4fe6e059c7ef)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/SOGH/CarrerinCarreron/My project/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce MX130 (ID=0x174d)
-    Vendor:   NVIDIA
-    VRAM:     2008 MB
-    Driver:   31.0.15.4601
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x3ea0)
+    Vendor:   Intel
+    VRAM:     8135 MB
+    Driver:   30.0.101.2079
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.034917 seconds.
-- Loaded All Assemblies, in  1.782 seconds
+Registered in 0.018380 seconds.
+- Loaded All Assemblies, in  2.105 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.260 seconds
-Domain Reload Profiling: 3038ms
-	BeginReloadAssembly (575ms)
+- Finished resetting the current domain, in  1.719 seconds
+Domain Reload Profiling: 3817ms
+	BeginReloadAssembly (753ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (4ms)
-	RebuildCommonClasses (189ms)
-	RebuildNativeTypeToScriptingClass (45ms)
-	initialDomainReloadingComplete (304ms)
-	LoadAllAssembliesAndSetupDomain (663ms)
-		LoadAssemblies (571ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (212ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (255ms)
+	LoadAllAssembliesAndSetupDomain (833ms)
+		LoadAssemblies (731ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (652ms)
-			TypeCache.Refresh (649ms)
-				TypeCache.ScanAssembly (598ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (1262ms)
+		AnalyzeDomain (828ms)
+			TypeCache.Refresh (822ms)
+				TypeCache.ScanAssembly (775ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (1720ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1000ms)
+		SetupLoadedEditorAssemblies (1416ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (33ms)
+			InitializePlatformSupportModulesInManaged (57ms)
+			SetLoadedEditorAssemblies (46ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (19ms)
-			ProcessInitializeOnLoadAttributes (703ms)
-			ProcessInitializeOnLoadMethodAttributes (208ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (1009ms)
+			ProcessInitializeOnLoadMethodAttributes (266ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,55 +116,55 @@ Domain Reload Profiling: 3038ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2.045 seconds
-Refreshing native plugins compatible for Editor in 25.78 ms, found 2 plugins.
+- Loaded All Assemblies, in  6.094 seconds
+Refreshing native plugins compatible for Editor in 17.38 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.385 seconds
-Domain Reload Profiling: 4419ms
-	BeginReloadAssembly (514ms)
+- Finished resetting the current domain, in  2.243 seconds
+Domain Reload Profiling: 8058ms
+	BeginReloadAssembly (1251ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (21ms)
+		DisableScriptedObjects (17ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (143ms)
-	RebuildNativeTypeToScriptingClass (45ms)
-	initialDomainReloadingComplete (174ms)
-	LoadAllAssembliesAndSetupDomain (1156ms)
-		LoadAssemblies (1047ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (204ms)
+	RebuildCommonClasses (160ms)
+	RebuildNativeTypeToScriptingClass (48ms)
+	initialDomainReloadingComplete (959ms)
+	LoadAllAssembliesAndSetupDomain (3396ms)
+		LoadAssemblies (2336ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (415ms)
-			TypeCache.Refresh (343ms)
-				TypeCache.ScanAssembly (297ms)
-			ScanForSourceGeneratedMonoScriptInfo (59ms)
+		AnalyzeDomain (1586ms)
+			TypeCache.Refresh (1504ms)
+				TypeCache.ScanAssembly (1403ms)
+			ScanForSourceGeneratedMonoScriptInfo (70ms)
 			ResolveRequiredComponents (10ms)
-	FinalizeReload (2387ms)
+	FinalizeReload (2245ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1824ms)
+		SetupLoadedEditorAssemblies (1766ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (187ms)
-			ProcessInitializeOnLoadAttributes (917ms)
-			ProcessInitializeOnLoadMethodAttributes (672ms)
-			AfterProcessingInitializeOnLoad (23ms)
+			BeforeProcessingInitializeOnLoad (156ms)
+			ProcessInitializeOnLoadAttributes (983ms)
+			ProcessInitializeOnLoadMethodAttributes (583ms)
+			AfterProcessingInitializeOnLoad (19ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (30ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 24.47 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (23ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 36.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2524 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (68.8 KB). Loaded Objects now: 2968.
-Memory consumption went from 111.8 MB to 111.8 MB.
-Total: 24.760100 ms (FindLiveObjects: 0.466600 ms CreateObjectMapping: 0.339300 ms MarkObjects: 23.693200 ms  DeleteObjects: 0.258300 ms)
+Unloading 61 unused Assets / (68.9 KB). Loaded Objects now: 2968.
+Memory consumption went from 112.2 MB to 112.2 MB.
+Total: 23.207200 ms (FindLiveObjects: 1.111900 ms CreateObjectMapping: 0.505900 ms MarkObjects: 21.355100 ms  DeleteObjects: 0.231400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -175,17 +175,1334 @@ AssetImportParameters requested are different than current active one (requested
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 8609.706086 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.003719 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.004013 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000842 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.017611 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000633 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021264 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001176 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.003196 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001285 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020359 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001217 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019393 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001146 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020824 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001251 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.030420 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.008342 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.005034 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000876 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.015874 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001027 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018337 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000708 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018173 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000926 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.016191 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001157 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018485 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000735 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.017710 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000809 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019216 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000780 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018274 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000874 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.023165 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000865 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.025733 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001294 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020211 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000928 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019797 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001833 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.015768 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000891 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021488 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000880 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018503 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001089 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019830 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000832 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.027006 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000830 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019157 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001020 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.017577 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000630 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021855 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000896 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.026560 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001179 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018798 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000799 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020654 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000918 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022950 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001176 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.025338 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000951 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021117 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000927 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.033100 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001089 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022691 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000754 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022770 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001900 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020787 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000979 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.017539 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000920 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018607 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000892 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.026113 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001854 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.027080 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001077 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021707 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001081 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021520 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000856 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020802 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001086 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018752 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001258 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021755 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000786 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019333 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000832 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020695 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001084 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018966 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001169 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018174 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000768 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.018489 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000935 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021108 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000825 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.023810 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001057 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021355 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001718 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.032267 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001354 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.026698 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001092 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.020233 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002032 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022405 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001058 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021903 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001509 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.015742 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000884 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.019621 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000887 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.021376 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.002168 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.003964 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.000915 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.022024 seconds.
+  path: Assets/Scripts/ConexiónServidor.cs
+  artifactKey: Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ConexiónServidor.cs using Guid(d331525732d87f74992555015ede5c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.001677 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+  ERROR: Build asset version error: assets/scripts/conexiónservidor.cs in SourceAssetDB has modification time of '2023-11-06T16:51:46.0106077Z' while content on disk has modification time of '2023-11-06T18:23:40.3849877Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.935 seconds
+Refreshing native plugins compatible for Editor in 17.36 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.282 seconds
+Domain Reload Profiling: 3214ms
+	BeginReloadAssembly (317ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (75ms)
+	RebuildCommonClasses (73ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (443ms)
+		LoadAssemblies (576ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (42ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2284ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1412ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (168ms)
+			ProcessInitializeOnLoadAttributes (741ms)
+			ProcessInitializeOnLoadMethodAttributes (460ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 15.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2504 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2971.
+Memory consumption went from 110.0 MB to 110.0 MB.
+Total: 17.525500 ms (FindLiveObjects: 0.382400 ms CreateObjectMapping: 0.377800 ms MarkObjects: 16.643500 ms  DeleteObjects: 0.119900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 27.63 ms, found 2 plugins.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.999 seconds
+Refreshing native plugins compatible for Editor in 14.07 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.307 seconds
+Domain Reload Profiling: 3303ms
+	BeginReloadAssembly (376ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (91ms)
+	RebuildCommonClasses (95ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (431ms)
+		LoadAssemblies (617ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (2309ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1434ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (152ms)
+			ProcessInitializeOnLoadAttributes (730ms)
+			ProcessInitializeOnLoadMethodAttributes (509ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 16.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (3.0 KB). Loaded Objects now: 2968.
-Memory consumption went from 68.8 MB to 68.8 MB.
-Total: 27.642400 ms (FindLiveObjects: 0.853200 ms CreateObjectMapping: 0.573400 ms MarkObjects: 26.132600 ms  DeleteObjects: 0.080700 ms)
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2974.
+Memory consumption went from 112.2 MB to 112.2 MB.
+Total: 16.741200 ms (FindLiveObjects: 0.396300 ms CreateObjectMapping: 0.360300 ms MarkObjects: 15.869600 ms  DeleteObjects: 0.113200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 41.323523 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(2045d4e92fd121e4cbf87440491a7941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(2045d4e92fd121e4cbf87440491a7941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14689afdac9c80053f6c94e0e12c8f8d') in 0.004480 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.970 seconds
+Refreshing native plugins compatible for Editor in 14.06 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.026 seconds
+Domain Reload Profiling: 2988ms
+	BeginReloadAssembly (318ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (19ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (77ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (470ms)
+		LoadAssemblies (602ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (42ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (2027ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1245ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (13ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (632ms)
+			ProcessInitializeOnLoadMethodAttributes (457ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 14.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2504 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2977.
+Memory consumption went from 113.9 MB to 113.9 MB.
+Total: 10.686600 ms (FindLiveObjects: 0.358800 ms CreateObjectMapping: 0.274700 ms MarkObjects: 9.954400 ms  DeleteObjects: 0.097300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.918 seconds
+Refreshing native plugins compatible for Editor in 14.87 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.844 seconds
+Domain Reload Profiling: 2757ms
+	BeginReloadAssembly (343ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (408ms)
+		LoadAssemblies (581ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1845ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1124ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (586ms)
+			ProcessInitializeOnLoadMethodAttributes (392ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Refreshing native plugins compatible for Editor in 12.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2980.
+Memory consumption went from 116.1 MB to 116.1 MB.
+Total: 11.029600 ms (FindLiveObjects: 0.319100 ms CreateObjectMapping: 0.290400 ms MarkObjects: 10.316400 ms  DeleteObjects: 0.102000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.995 seconds
+Refreshing native plugins compatible for Editor in 17.71 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.533 seconds
+Domain Reload Profiling: 3519ms
+	BeginReloadAssembly (361ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (84ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (447ms)
+		LoadAssemblies (628ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2533ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1643ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (170ms)
+			ProcessInitializeOnLoadAttributes (913ms)
+			ProcessInitializeOnLoadMethodAttributes (518ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Refreshing native plugins compatible for Editor in 17.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2983.
+Memory consumption went from 118.0 MB to 118.0 MB.
+Total: 16.319300 ms (FindLiveObjects: 0.448400 ms CreateObjectMapping: 0.440200 ms MarkObjects: 15.233200 ms  DeleteObjects: 0.185700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.982 seconds
+Refreshing native plugins compatible for Editor in 18.93 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.137 seconds
+Domain Reload Profiling: 3114ms
+	BeginReloadAssembly (325ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (474ms)
+		LoadAssemblies (619ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (41ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2138ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1284ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (141ms)
+			ProcessInitializeOnLoadAttributes (720ms)
+			ProcessInitializeOnLoadMethodAttributes (389ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 14.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2986.
+Memory consumption went from 119.9 MB to 119.9 MB.
+Total: 14.344500 ms (FindLiveObjects: 0.410600 ms CreateObjectMapping: 0.403400 ms MarkObjects: 13.398700 ms  DeleteObjects: 0.129200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.160 seconds
+Refreshing native plugins compatible for Editor in 17.69 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.930 seconds
+Domain Reload Profiling: 4080ms
+	BeginReloadAssembly (372ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (110ms)
+	RebuildNativeTypeToScriptingClass (41ms)
+	initialDomainReloadingComplete (90ms)
+	LoadAllAssembliesAndSetupDomain (536ms)
+		LoadAssemblies (739ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (2931ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1883ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (11ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (194ms)
+			ProcessInitializeOnLoadAttributes (989ms)
+			ProcessInitializeOnLoadMethodAttributes (647ms)
+			AfterProcessingInitializeOnLoad (21ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Refreshing native plugins compatible for Editor in 20.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2989.
+Memory consumption went from 121.9 MB to 121.8 MB.
+Total: 21.043100 ms (FindLiveObjects: 1.414600 ms CreateObjectMapping: 0.512600 ms MarkObjects: 19.013500 ms  DeleteObjects: 0.100300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.018 seconds
+Refreshing native plugins compatible for Editor in 15.87 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.251 seconds
+Domain Reload Profiling: 3261ms
+	BeginReloadAssembly (341ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (88ms)
+	RebuildNativeTypeToScriptingClass (39ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (464ms)
+		LoadAssemblies (608ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (40ms)
+			TypeCache.Refresh (18ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (2252ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1337ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (175ms)
+			ProcessInitializeOnLoadAttributes (724ms)
+			ProcessInitializeOnLoadMethodAttributes (397ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 15.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.9 KB). Loaded Objects now: 2992.
+Memory consumption went from 123.8 MB to 123.8 MB.
+Total: 16.802600 ms (FindLiveObjects: 0.400400 ms CreateObjectMapping: 0.417100 ms MarkObjects: 15.892400 ms  DeleteObjects: 0.091100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.012 seconds
+Refreshing native plugins compatible for Editor in 18.72 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.038 seconds
+Domain Reload Profiling: 4047ms
+	BeginReloadAssembly (341ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (73ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (31ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (473ms)
+		LoadAssemblies (648ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (3039ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1995ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (21ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (193ms)
+			ProcessInitializeOnLoadAttributes (893ms)
+			ProcessInitializeOnLoadMethodAttributes (837ms)
+			AfterProcessingInitializeOnLoad (24ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Refreshing native plugins compatible for Editor in 26.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2505 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (42.8 KB). Loaded Objects now: 2995.
+Memory consumption went from 125.7 MB to 125.7 MB.
+Total: 22.535900 ms (FindLiveObjects: 0.401700 ms CreateObjectMapping: 0.373400 ms MarkObjects: 21.540500 ms  DeleteObjects: 0.217800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
