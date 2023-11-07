@@ -13,6 +13,7 @@ public class CCliente : MonoBehaviour
     public TextMeshProUGUI text2;
     public TextMeshProUGUI text3;
     public TextMeshProUGUI text4;
+    public TextMeshProUGUI text5;
 
     //variables para registrarse/loguearse
     public TMP_InputField NameInput;
@@ -170,6 +171,10 @@ public class CCliente : MonoBehaviour
                     text4 = GameObject.Find("Text Conectados").GetComponent<TextMeshProUGUI>();
                     text4.text = "";
                     text4.text = "Jugadores conectados: " + STRjugadoresConectados;
+
+                    /*text5 = GameObject.Find("ListaConectados").GetComponent<TextMeshProUGUI>();
+                    text5.text = "";
+                    text5.text = STRjugadoresConectados;*/
                     break;
                 case 6: //desconectar
                     if (mensaje == "Desconectando")

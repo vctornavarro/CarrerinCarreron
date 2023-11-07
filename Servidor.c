@@ -148,7 +148,7 @@ void Login(char nombre[25], char contrasena[25], char respuesta[512])
 		exit(1);
 	}
 	
-	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
+	conn = mysql_real_connect(conn, "shiva2.upc.es", "root", "mysql", "M2_bd", 0, NULL, 0);
 	if (conn == NULL)
 	{
 		printf("Error al inicializar la conexion2: %u %s\n",
@@ -197,7 +197,7 @@ void Registrar(char nombre[25], char contrasena[25], char respuesta[512])
 		exit(1);
 	}
 	
-	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
+	conn = mysql_real_connect(conn, "shiva2.upc.es", "root", "mysql", "M2_bd", 0, NULL, 0);
 	if (conn == NULL)
 	{
 		printf("Error al inicializar la conexion2: %u %s\n",
@@ -234,7 +234,7 @@ void DameTiempoJugador(char nombre[20], char respuesta[512])
 		exit (1);
 	}
 	//inicializar la conexin
-	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
+	conn = mysql_real_connect(conn, "shiva2.upc.es", "root", "mysql", "M2_bd", 0, NULL, 0);
 	if (conn==NULL) {
 		printf ("Error al inicializar la conexion: %u %s\n", 
 				mysql_errno(conn), mysql_error(conn));
@@ -283,7 +283,7 @@ void DameCircuitoFav(char nombre[50], char respuesta[512])
 		exit (1);
 	}
 	//inicializar la conexin
-	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
+	conn = mysql_real_connect(conn, "shiva2.upc.es", "root", "mysql", "M2_bd", 0, NULL, 0);
 	if (conn==NULL) {
 		printf ("Error al inicializar la conexion: %u %s\n", 
 				mysql_errno(conn), mysql_error(conn));
@@ -332,7 +332,7 @@ void DameDistancia(char circuito[20], char respuesta[512])
 		exit (1);
 	}
 	//inicializar la conexin
-	conn = mysql_real_connect(conn, "localhost", "root", "mysql", "bd", 0, NULL, 0);
+	conn = mysql_real_connect(conn, "shiva2.upc.es", "root", "mysql", "m2_bd", 0, NULL, 0);
 	if (conn==NULL) {
 		printf ("Error al inicializar la conexion: %u %s\n", 
 				mysql_errno(conn), mysql_error(conn));
@@ -505,6 +505,11 @@ void* atenderCliente(void* socket)
 				}
 				pthread_mutex_unlock(&mutex);
 			}
+			pthread_mutex_lock(&mutex);
+			DameConectados(&lista, contestacion);
+			sprintf(respuesta, "%s", contestacion);
+			write(sock_conn, respuesta, strlen(respuesta));
+			pthread_mutex_unlock(&mutex);
 		}
 		close(sock_conn); 
 	}
@@ -519,7 +524,7 @@ int main(int argc, char* argv[])
 	pthread_t thread;
 	lista.num = 0;
 	int conexion = 0;
-	int puerto = 5030;
+	int puerto = 50004; //4,5,6
 	int i = 0;
 	
 	//abrimos el socket
