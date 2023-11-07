@@ -410,40 +410,52 @@ void* atenderCliente(void* socket)
 			}
 			}	
 			if (codigo == 0) //LOGIN
-			{
-				p = strtok(NULL, "-");
-				if (p != NULL) {
-					strcpy(contrasena, p);
-					printf("Codigo: %d, Nombre: %s y Contrasena: %s\n", codigo, NOMBRE, contrasena);
-					Login(NOMBRE, contrasena, contestacion);
-					pthread_mutex_lock(&mutex);
-					if (strcmp(contestacion, "Error") != 0) {
-						r = Conectar(&lista, NOMBRE, socket);
-						DameConectados(&lista, conectados);
-						sprintf(respuesta, "%s", contestacion);
-						write(sock_conn, respuesta, strlen(respuesta));
-					}
-					pthread_mutex_unlock(&mutex);
-				}
-			}
+            {
+                p = strtok(NULL, "-");
+                if (p != NULL) {
+                    strcpy(contrasena, p);
+                    printf("Codigo: %d, Nombre: %s y Contrasena: %s\n", codigo, NOMBRE, contrasena);
+                    Login(NOMBRE, contrasena, contestacion);
+                    pthread_mutex_lock(&mutex);
+                    if (strcmp(contestacion, "Error") != 0) {
+                        r = Conectar(&lista, NOMBRE, socket);
+                        DameConectados(&lista, conectados);
+                        sprintf(respuesta, "%s", contestacion);
+                        write(sock_conn, respuesta, strlen(respuesta));
+                        int j;
+                        for (j = 0; j < lista.num; j++)
+                        {
+                        sprintf(respuesta, "%s", conectados);
+                        write(sockets[j], respuesta, strlen(respuesta));
+                        }
+                    }
+                    pthread_mutex_unlock(&mutex);
+                }
+            }
 			else if (codigo == 1) //REGISTRAR
-			{
-				
-				p = strtok(NULL, "-");
-				if (p != NULL) {
-					strcpy(contrasena, p);
-					printf("Codigo: %d, Nombre: %s y Contrasena: %s\n", codigo, NOMBRE, contrasena);
-					Registrar(NOMBRE, contrasena, contestacion);
-					pthread_mutex_lock(&mutex);
-					if (strcmp(contestacion, "Error") != 0) {
-						r = Conectar(&lista, NOMBRE, socket);
-						DameConectados(&lista, conectados);
-						sprintf(respuesta, "%s", contestacion);
-						write(sock_conn, respuesta, strlen(respuesta));
-					}
-					pthread_mutex_unlock(&mutex);
-				}
-			}
+            {
+
+                p = strtok(NULL, "-");
+                if (p != NULL) {
+                    strcpy(contrasena, p);
+                    printf("Codigo: %d, Nombre: %s y Contrasena: %s\n", codigo, NOMBRE, contrasena);
+                    Registrar(NOMBRE, contrasena, contestacion);
+                    pthread_mutex_lock(&mutex);
+                    if (strcmp(contestacion, "Error") != 0) {
+                        r = Conectar(&lista, NOMBRE, socket);
+                        DameConectados(&lista, conectados);
+                        sprintf(respuesta, "%s", contestacion);
+                        write(sock_conn, respuesta, strlen(respuesta));
+                        int j;
+                        for (j = 0; j < lista.num; j++)
+                        {
+                        sprintf(respuesta, "%s", conectados);
+                        write(sockets[j], respuesta, strlen(respuesta));
+                        }
+                    }
+                    pthread_mutex_unlock(&mutex);
+                }
+            }
 			else if(codigo == 2)
 			{
 				p = strtok(NULL, "-");
@@ -487,29 +499,30 @@ void* atenderCliente(void* socket)
 				pthread_mutex_unlock(&mutex);
 			}
 			else if (codigo == 6) //DESCONECTAR/LOGOUT
-			{
-				pthread_mutex_lock(&mutex);
-				printf("Desconectando a %s\n", NOMBRE);
-				r = Desconectar(&lista, NOMBRE);
-				printf("Codigo de desconexion: %d\n", r);
-				if (r == 0)
-				{
-					DameConectados(&lista, conectados);
-					sprintf(respuesta, "6-Desconectando");
-					write(sock_conn, respuesta, strlen(respuesta));
-				}
-				else if (r == -1)
-				{
-					sprintf(respuesta, "6-Error al desconectar");
-					write(sock_conn, respuesta, strlen(respuesta));
-				}
-				pthread_mutex_unlock(&mutex);
-			}
-			pthread_mutex_lock(&mutex);
-			DameConectados(&lista, contestacion);
-			sprintf(respuesta, "%s", contestacion);
-			write(sock_conn, respuesta, strlen(respuesta));
-			pthread_mutex_unlock(&mutex);
+            {
+                pthread_mutex_lock(&mutex);
+                printf("Desconectando a %s\n", NOMBRE);
+                r = Desconectar(&lista, NOMBRE);
+                printf("Codigo de desconexion: %d\n", r);
+                if (r == 0)
+                {
+                    DameConectados(&lista, conectados);
+                    sprintf(respuesta, "6-Desconectando");
+                    write(sock_conn, respuesta, strlen(respuesta));
+                    int j;
+                    for (j = 0; j < lista.num; j++)
+                    {
+                        sprintf(respuesta, "%s", conectados);
+                        write(sockets[j], respuesta, strlen(respuesta));
+                    }
+                }
+                else if (r == -1)
+                {
+                    sprintf(respuesta, "6-Error al desconectar");
+                    write(sock_conn, respuesta, strlen(respuesta));
+                }
+                pthread_mutex_unlock(&mutex);
+            }
 		}
 		close(sock_conn); 
 	}
