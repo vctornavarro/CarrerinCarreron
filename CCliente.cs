@@ -26,6 +26,11 @@ public class CCliente : MonoBehaviour
     public TextMeshProUGUI notificacion;
     public TMP_InputField NJInputField;
 
+    public TextMeshProUGUI textMensaje;
+    public TMP_InputField HostInput;
+    public TMP_InputField InvitadoInput;
+    
+
     private ConexionServidor conexionServidor;
     private string usuario;
     private string contrasena;
@@ -88,6 +93,8 @@ public class CCliente : MonoBehaviour
                         text1.text = "";
                         Debug.Log(trozos[2]);
                         text1.text = "Error: " + trozos[2];
+                        usuario="";
+                        contrasena="";
                     }
                     break;
                 case 1: //registrar
@@ -139,14 +146,14 @@ public class CCliente : MonoBehaviour
                         Debug.Log("No se encuentran datos que coincidan");
                     }
                     break;
-                case 4://consulta: Dame la duracion total de un circuito
+                case 4://consulta: Dame la distancia total de un circuito
                     if (mensaje == "SI")
                     {
-                        string duracion = trozos[2];
-                        Debug.Log("Duracion total del circuito: " + duracion);
+                        int distancia = Convert.ToInt32(trozos[2]);
+                        Debug.Log("Distancia del circuito: " + distancia);
                         text3 = GameObject.Find("Text Consulta3").GetComponent<TextMeshProUGUI>();
                         text3.text = "";
-                        text3.text = "El tiempo total del circuito es de " + duracion;
+                        text3.text = "La distancia del circuito es de " + distancia + "m";
                     }
                     else if (mensaje == "Error")
                     {
@@ -186,6 +193,46 @@ public class CCliente : MonoBehaviour
                     else if (mensaje == "Error al desconectar")
                         notificacion.text = "Error al desconectar";
                     break;
+                case 7: //invitacion a partida
+                    if (mensaje == "No existe")
+                    {
+                        textMensaje = GameObject.Find("MensajeInvitacion").GetComponent<TextMeshProUGUI>();
+                        textMensaje.text = mensaje;
+                    }
+                    else if (mensaje == "Invitacion enviada")
+                    {
+                        textMensaje = GameObject.Find("MensajeInvitacion").GetComponent<TextMeshProUGUI>();
+                        textMensaje.text = "Invitación enviada, esperando respuesta";
+                    }
+                    else if (mensaje == "No puedes invitarte a ti mismo")
+                    {
+                        textMensaje = GameObject.Find("MensajeInvitacion").GetComponent<TextMeshProUGUI>();
+                        textMensaje.text = mensaje;
+                    }
+                    break;
+                case 8: //respuesta invitacion a partida siendo el invitado
+                    SceneManager.LoadScene("Invitación");
+                    AceptarInvitacion(mensaje);
+                    RechazarInvitacion(mensaje);
+                    textMensaje = GameObject.Find("MensajeInvitacion").GetComponent<TextMeshProUGUI>();
+                    textMensaje.text = "Nueva invitación de " + mensaje;
+                    break;
+                case 9: //respuesta invitacion en caso de ser el host
+                    if (mensaje == "Invitacion aceptada")
+                    {
+                        textMensaje = GameObject.Find("MensajeInvitacion").GetComponent<TextMeshProUGUI>();
+                        textMensaje.text = mensaje;
+                        //EnviarID(trozos[2]);
+
+                        SceneManager.LoadScene("Gameplay");
+                    }
+                    else if (mensaje == "Invitacion rechazada")
+                    {
+                        textMensaje = GameObject.Find("MensajeInvitacion").GetComponent<TextMeshProUGUI>();
+                        textMensaje.text = mensaje;
+                    }
+                    break;
+                    
             }
         }
     }
@@ -256,7 +303,7 @@ public class CCliente : MonoBehaviour
         conexionServidor.EnviarMensajeServidor(query2);
         Debug.Log("Enviado");
     }
-    public void DameDuracionCircuito() //consulta 3 para encontrar cual es la duracion total de un circuito
+    public void DameDistancia() //consulta 3 para encontrar cual es la duracion total de un circuito
     {
         string NameCircuitInputField = NombreCircuitoInputField.text;
 
@@ -270,6 +317,33 @@ public class CCliente : MonoBehaviour
         conexionServidor.EnviarMensajeServidor(conectados);
         Debug.Log("Enviado");
     }
+    public void Invitar() //invitar
+
+    {
+        string invitar = "7-" + HostInput.text + "-" + InvitadoInput.text;
+        conexionServidor.EnviarMensajeServidor(invitar);
+        Debug.Log("Enviado");
+    }
+    public void AceptarInvitacion(string host) //aceptar invitacion
+    {
+        string mensajeAceptaInvitacion = "8-SI-" + host;
+        conexionServidor.EnviarMensajeServidor(mensajeAceptaInvitacion);
+        Debug.Log("Enviado");
+        SceneManager.LoadScene("MenuJuego");
+    }
+    public void RechazarInvitacion(string host) //denegar invitacion
+    {
+        string mensajeRechazaInvitacion = "8-NO-" + host;
+        conexionServidor.EnviarMensajeServidor(mensajeRechazaInvitacion);
+        Debug.Log("Enviado");
+        SceneManager.LoadScene("MenuJuego");
+    }
+    /*public void EnviarID(string ID)
+    {
+        string mensaje = "9-" + ID;
+        conexionServidor.EnviarMensajeServidor(mensaje);
+        Debug.Log("Enviado");
+    }*/
      public void Desconectar() //desconectar/log out
     {
         string mensaje = "6-" + usuario + "-" + contrasena;

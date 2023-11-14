@@ -1767,7 +1767,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1406222063}
         m_TargetAssemblyTypeName: CCliente, Assembly-CSharp
-        m_MethodName: DameDuracionCircuito
+        m_MethodName: DameDistancia
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2328,6 +2328,7 @@ MonoBehaviour:
   text2: {fileID: 2081792440}
   text3: {fileID: 1864073190}
   text4: {fileID: 70427497}
+  text5: {fileID: 0}
   NameInput: {fileID: 0}
   PasswordInput: {fileID: 0}
   ConfirmPasswordInput: {fileID: 0}
@@ -3584,7 +3585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Duraci\xF3n circuito"
+  m_text: Distancia Circuito
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

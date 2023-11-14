@@ -23,4 +23,12 @@ public class CambiarEscena : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("MenuJuego");
     }
+    public void IrAInvitar()
+    {
+        SceneManager.LoadSceneAsync("Invitación");
+    }
+    public void IrAGameplay()
+    {
+        SceneManager.LoadSceneAsync("Gameplay");
+    }
 }
