@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuJuego.unity
     guid: 9d6d0d7fa2985824d9857015a81f781a
+  - enabled: 1
+    path: Assets/Scenes/Gameplay.unity
+    guid: c26ba14cd85268e44a7cfb8278c50a51
+  - enabled: 1
+    path: Assets/Scenes/Invitacion.unity
+    guid: 1d21f68517bc62744b749504a894d5de
   m_configObjects: {}
