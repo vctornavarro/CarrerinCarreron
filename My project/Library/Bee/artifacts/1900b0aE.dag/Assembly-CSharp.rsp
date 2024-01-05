@@ -374,6 +374,7 @@
 "Assets/Scripts/ChatManager.cs"
 "Assets/Scripts/ConexiónServidor.cs"
 "Assets/Scripts/Crash.cs"
+"Assets/Scripts/menugameover.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/Obstaculos.cs"
 "Assets/Scripts/Parallax.cs"
