@@ -35,4 +35,8 @@ public class CambiarEscena : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Gameplay2");
     }
+    public void IrAAjustes()
+    {
+        SceneManager.LoadSceneAsync("Ajustes");
+    }
 }

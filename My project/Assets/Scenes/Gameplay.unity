@@ -928,6 +928,8 @@ MonoBehaviour:
   textMensaje: {fileID: 0}
   HostInput: {fileID: 0}
   InvitadoInput: {fileID: 0}
+  Chat: {fileID: 0}
+  MensajeInputChat: {fileID: 0}
 --- !u!1 &1200276472
 GameObject:
   m_ObjectHideFlags: 0
