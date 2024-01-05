@@ -369,6 +369,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CambiarEscena+.cs"
 "Assets/Scripts/CCliente.cs"
+"Assets/Scripts/ChatManager.cs"
 "Assets/Scripts/ConexiónServidor.cs"
 "Assets/Scripts/Crash.cs"
 "Assets/Scripts/Movement.cs"

@@ -367,25 +367,6 @@ void DameDistancia(char circuito[20], char respuesta[512])
 	}
 	mysql_close (conn);
 }
-
-int PosicionJugador(ListaConectados* lista, char nombre[20])
-{
-	int i = 0;
-	int encontrado = 0;
-	while ((i < lista->num) && !encontrado)
-	{
-		if (strcmp(lista->conectados[i].nombre, nombre) == 0)
-		{
-			encontrado = 1;
-		}
-		else
-			i++;
-	}
-	if (encontrado)
-		return i;
-	else
-		return -1;
-}
 		
 void* atenderCliente(void* socket)
 {
@@ -590,6 +571,25 @@ void* atenderCliente(void* socket)
 				{
 					sprintf(respuesta, "9-Invitacion rechazada");
 					write(lista.conectados[PosicionParaRespuesta].socket, respuesta, strlen(respuesta));
+				}
+			}
+		}
+		else if (codigo == 9) { //reenviar mensaje
+			char mensaje[200];
+			p = strtok(NULL, "-");
+			if (p != NULL) {
+				strcpy(mensaje, p);
+				char usuario[200];
+				p = strtok(NULL, "-");
+				if (p != NULL) {
+					strcpy(usuario, p);
+					sprintf(respuesta, "10-%s-%s", mensaje, usuario);
+					printf("Mensaje: %s\n", respuesta);
+					int j;
+					for (j = 0; j < lista.num; j++)
+					{
+						write(sockets[j], respuesta, strlen(respuesta));
+					}
 				}
 			}
 		}

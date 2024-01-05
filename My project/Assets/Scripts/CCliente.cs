@@ -29,6 +29,10 @@ public class CCliente : MonoBehaviour
     public TextMeshProUGUI textMensaje;
     public TMP_InputField HostInput;
     public TMP_InputField InvitadoInput;
+
+    public TextMeshProUGUI Chat;
+    public TMP_InputField MensajeInputChat;
+    private ChatManager chatManager;
     
 
     private ConexionServidor conexionServidor;
@@ -93,8 +97,8 @@ public class CCliente : MonoBehaviour
                         text1.text = "";
                         Debug.Log(trozos[2]);
                         text1.text = "Error: " + trozos[2];
-                        usuario="";
-                        contrasena="";
+                        //usuario = "";
+                        //contrasena = "";
                     }
                     break;
                 case 1: //registrar
@@ -231,6 +235,12 @@ public class CCliente : MonoBehaviour
                         textMensaje = GameObject.Find("MensajeInvitacion").GetComponent<TextMeshProUGUI>();
                         textMensaje.text = mensaje;
                     }
+                    break;
+                case 10: //recibir mensaje
+                    string usuario = trozos[2];
+
+                    Chat = GameObject.Find("Chat").GetComponent<TextMeshProUGUI>();
+                    Chat.text += ">>" + usuario + "-" + mensaje + "\n";
                     break;
                     
             }
