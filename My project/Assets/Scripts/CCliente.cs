@@ -150,14 +150,14 @@ public class CCliente : MonoBehaviour
                         Debug.Log("No se encuentran datos que coincidan");
                     }
                     break;
-                case 4://consulta: Dame la distancia total de un circuito
+                case 4://consulta: Dame la dificultad total de un circuito
                     if (mensaje == "SI")
                     {
-                        int distancia = Convert.ToInt32(trozos[2]);
-                        Debug.Log("Distancia del circuito: " + distancia);
+                        string dificultad = trozos[2];
+                        Debug.Log("Dificultad del circuito: " + dificultad);
                         text3 = GameObject.Find("Text Consulta3").GetComponent<TextMeshProUGUI>();
                         text3.text = "";
-                        text3.text = "La distancia del circuito es de " + distancia + "m";
+                        text3.text = "La dificultad del circuito es: " + dificultad;
                     }
                     else if (mensaje == "Error")
                     {
@@ -313,7 +313,7 @@ public class CCliente : MonoBehaviour
         conexionServidor.EnviarMensajeServidor(query2);
         Debug.Log("Enviado");
     }
-    public void DameDistancia() //consulta 3 para encontrar cual es la duracion total de un circuito
+    public void DameDificultad() //consulta 3 para encontrar cual es la duracion total de un circuito
     {
         string NameCircuitInputField = NombreCircuitoInputField.text;
 

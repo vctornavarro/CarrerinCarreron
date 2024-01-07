@@ -318,10 +318,10 @@ void DameCircuitoFav(char nombre[50], char respuesta[512])
 	}
 	mysql_close (conn);
 	}
-//Dame la distancia de un circuito
-void DameDistancia(char circuito[20], char respuesta[512])
+//Dame la dificultad de un circuito
+void DameDificultad(char circuito[20], char respuesta[512])
 	{
-	int distancia;
+	char dificultad [50];
 	char consulta [100];
 	
 	//Creamos una conexion al servidor MYSQL 
@@ -340,7 +340,7 @@ void DameDistancia(char circuito[20], char respuesta[512])
 	}
 	
 	//consulta SQL
-	strcpy (consulta, "SELECT DISTANCIA FROM CARRERIN WHERE CARRERIN.CIRCUITO = '");
+	strcpy (consulta, "SELECT DIFICULTAD FROM CARRERIN WHERE CARRERIN.CIRCUITO = '");
 	strcat (consulta, circuito);
 	strcat (consulta, "'");
 	
@@ -362,8 +362,8 @@ void DameDistancia(char circuito[20], char respuesta[512])
 	}
 	else	
 	{
-		distancia = atoi(row[0]);
-		sprintf(respuesta, "4-SI-%d", distancia);
+		strcpy(dificultad, row[0]);
+		sprintf(respuesta, "4-SI-%s", dificultad);
 	}
 	mysql_close (conn);
 }
@@ -485,7 +485,7 @@ void* atenderCliente(void* socket)
 				if (p != NULL) {
 					strcpy(consultas, p);
 					printf("Codigo: %d, Circuito: %s\n", codigo, consultas);
-					DameDistancia(consultas, contestacion);
+					DameDificultad(consultas, contestacion);
 					sprintf(respuesta, "%s", contestacion);
 					write(sock_conn, respuesta, strlen(respuesta));
 				}
