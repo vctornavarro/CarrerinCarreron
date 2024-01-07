@@ -5,8 +5,18 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    Vector2 input;
-    public float speed;
+
+
+
+    public float maximoX;
+    public float minimoX;
+    public float maximoY;
+    public float minimoY;
+    public float velocidadX;
+    public float velocidadY;
+
+    float movimientoX;
+    float movimientoY;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +26,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        input.x = Input.GetAxis("Horizontal");
-        input.y = Input.GetAxis("Vertical");
+        movimientoX = Input.GetAxis("Horizontal");
+        movimientoY = Input.GetAxis("Vertical");
+
+        transform.Translate(movimientoX * Time.deltaTime * velocidadX, movimientoY * Time.deltaTime * velocidadY, 0);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x,minimoX,maximoX), Mathf.Clamp(transform.position.y,minimoY,maximoY),transform.position.z);
     }
-    private void FixedUpdate()
-    {
-        rb.velocity = input * speed * Time.fixedDeltaTime;
-    }
+    
+        
+
+    
     
 }

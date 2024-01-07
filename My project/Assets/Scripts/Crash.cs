@@ -10,11 +10,11 @@ public class Crash : MonoBehaviour
    public menugameover gameManager;
 
 
-   /*private void Awake()
+   private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     } 
-    */
+    
    private void OnCollisionEnter2D(Collision2D collision)
    {
        
@@ -22,6 +22,6 @@ public class Crash : MonoBehaviour
         Destroy(gameObject);
         gameManager.gameOver();
         
-       // audioManager.PlaySFX(audioManager.death);
+        audioManager.PlaySFX(audioManager.death);
    }
 }

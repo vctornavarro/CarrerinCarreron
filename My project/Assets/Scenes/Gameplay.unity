@@ -1096,7 +1096,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a895921371db2a45942226587682e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
+  maximoX: 5.3
+  minimoX: -5.1
+  maximoY: 3.7
+  minimoY: -3.9
+  velocidadX: 5
+  velocidadY: 5
 --- !u!1 &945122429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,11 +2478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2217876586699578850, guid: 8edc3596e9ed6504ba05c221dad09643, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.2563
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2217876586699578850, guid: 8edc3596e9ed6504ba05c221dad09643, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2672
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2217876586699578850, guid: 8edc3596e9ed6504ba05c221dad09643, type: 3}
       propertyPath: m_LocalPosition.z
